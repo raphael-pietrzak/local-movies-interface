@@ -1,5 +1,8 @@
 
+# Netflix-Local
+
 Explorateur de séries et films en local avec l'interface de Netflix.
+
 
 ## Preview
 
@@ -39,6 +42,14 @@ Go to http://localhost:3000 to explore your series and movies.
 - Application desktop
 - Catégories
 - Bouttons skip intro + generic
+
+## Contributions
+
+Les contributions sont les bienvenues.
+
+## License
+
+MIT
 
 
 ## A propos
