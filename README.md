@@ -31,6 +31,15 @@ Go to http://localhost:3000 to explore your series and movies.
 
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
+- [tmdb](https://www.themoviedb.org/)
+
+## En cours de développement
+
+- Pouvoir changer les posters (avoir un choix de l'api tmdb)
+- Application desktop
+- Catégories
+- Bouttons skip intro + generic
+
 
 ## A propos
 
