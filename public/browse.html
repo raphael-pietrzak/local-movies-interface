@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>StreamFlix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}
+      * {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+      button {  background-color: transparent;}
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+      data-tag="font"
+    />
+    
+  </head>
+  <body>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <div>
+      <link href="./browse.css" rel="stylesheet" />
+<!-- src="assets/external/icon15-4w6.svg" -->
+
+      <div class="musho-main-frame-container">
+        <div class="musho-main-frame-musho-main-frame">
+          <div class="musho-main-frame-type-centered-nav">
+            <div class="musho-main-frame-brand">
+              <img
+                src="assets/external/favicon.ico"
+                alt="Icon15"
+                class="musho-main-frame-icon"
+              />
+              <span class="musho-main-frame-text"><span>StreamFlix</span></span>
+            </div>
+            <!-- <div class="musho-main-frame-nav-links">
+              <div class="musho-main-frame-text-container">
+                <span class="musho-main-frame-text002">
+                  <span>Start Streaming</span>
+                </span>
+              </div>
+            </div> -->
+            <div class="musho-main-frame-nav-links1">
+              <div class="musho-main-frame-nav-link">
+                <span class="musho-main-frame-text004">
+                  <button class="refresh-data" onclick="refreshData()">Refresh Data</button>
+                </span>
+              </div>
+              <div class="musho-main-frame-nav-link1">
+                <span class="musho-main-frame-text006">
+                  <span>Features</span>
+                </span>
+              </div>
+              <div class="musho-main-frame-nav-link2">
+                <span class="musho-main-frame-text008">
+                  <span>Creators</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------------------- -->
+          <div class="musho-main-frame-container">
+            <div class="musho-main-frame-musho-main-frame">
+              <div class="musho-main-frame-type-four-tall-cards">
+                <!-- <span class="musho-main-frame-text"><span>Streamflix</span></span> -->
+                <div class="musho-main-frame-content">
+                  <div class="musho-main-frame-heading-container"></div>
+                  <div class="musho-main-frame-cards-grid">
+                    <!-- MOVIES -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- ---------------------------------------------------- -->
+
+
+
+          <div class="musho-main-frame-type-overlaydalle">
+            <img
+              src="assets/external/overlay119-rxjm-700h.png"
+              alt="overlay119"
+              class="musho-main-frame-overlay"
+            />
+            <div class="musho-main-frame-copy-component">
+              <div class="musho-main-frame-heading-text">
+                <span class="musho-main-frame-text010">
+                  <span>Unleash Your Entertainment</span>
+                </span>
+                <span class="musho-main-frame-text012">
+                  <span>Discover a world of streaming content.</span>
+                </span>
+              </div>
+              <button class="musho-main-frame-button-combo"></button>
+              <button class="musho-main-frame-cta-button">
+                <div class="musho-main-frame-text-container01">
+                  <span class="musho-main-frame-text014">
+                    <span>Join Now</span>
+                  </span>
+                </div>
+              </button>
+              <button class="musho-main-frame-secondary-button">
+                <div class="musho-main-frame-text-container02">
+                  <span class="musho-main-frame-text016">
+                    <span>Explore More</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- <div class="musho-main-frame-type-big-image">
+            <div class="musho-main-frame-content">
+              <div class="musho-main-frame-heading-container">
+                <span class="musho-main-frame-text018">
+                  <span>StreamFlix Highlights</span>
+                </span>
+                <span class="musho-main-frame-text020">
+                  <span>Showcasing Our Top Content</span>
+                </span>
+              </div>
+              <div class="musho-main-frame-showcase-item">
+                <img
+                  src="assets/external/imagedalle137-gryr-200h.png"
+                  alt="Imagedalle137"
+                  class="musho-main-frame-imagedalle"
+                />
+                <div class="musho-main-frame-item-info">
+                  <span class="musho-main-frame-text022">
+                    <span>Featured Show Title</span>
+                  </span>
+                  <img
+                    src="assets/external/arrowright140-1t3p.svg"
+                    alt="ArrowRight140"
+                    class="musho-main-frame-arrow-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="musho-main-frame-type-simple-boxy">
+            <div class="musho-main-frame-container1">
+              <div class="musho-main-frame-copy-component1">
+                <div class="musho-main-frame-heading-text1">
+                  <span class="musho-main-frame-text024">
+                    <span>Ready for Unlimited Streaming?</span>
+                  </span>
+                  <span class="musho-main-frame-text026">
+                    <span>
+                      Subscribe now for endless entertainment options.
+                    </span>
+                  </span>
+                </div>
+                <div class="musho-main-frame-button-input-combo">
+                  <div class="musho-main-frame-input">
+                    <div class="musho-main-frame-input-form">
+                      <div class="musho-main-frame-text-container03">
+                        <span class="musho-main-frame-text028">
+                          <span>Enter Your Email</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="musho-main-frame-button">
+                    <div class="musho-main-frame-text-container04">
+                      <span class="musho-main-frame-text030">
+                        <span>Sign Up</span>
+                      </span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="musho-main-frame-type-floating-box">
+            <div class="musho-main-frame-container2">
+              <div class="musho-main-frame-copy">
+                <span class="musho-main-frame-text032">
+                  <span>Get StreamFlix Now</span>
+                </span>
+                <span class="musho-main-frame-text034">
+                  <span>Endless Streaming Possibilities</span>
+                </span>
+              </div>
+              <button class="musho-main-frame-button1">
+                <div class="musho-main-frame-text-container05">
+                  <span class="musho-main-frame-text036">
+                    <span>Start Free Trial</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="musho-main-frame-property1-highlight-background">
+            <div class="musho-main-frame-copy-component2">
+              <div class="musho-main-frame-heading-text2">
+                <span class="musho-main-frame-text038">
+                  <span>Subscription Plans</span>
+                </span>
+                <span class="musho-main-frame-text040">
+                  <span>Choose the plan that suits your streaming needs.</span>
+                </span>
+              </div>
+            </div>
+            <div class="musho-main-frame-price-plans">
+              <div class="musho-main-frame-plan">
+                <div class="musho-main-frame-heading">
+                  <img
+                    src="assets/external/iconicon172-m1xa.svg"
+                    alt="Iconicon172"
+                    class="musho-main-frame-iconicon"
+                  />
+                  <span class="musho-main-frame-text042">
+                    <span>Individual</span>
+                  </span>
+                  <span class="musho-main-frame-text044">
+                    <span>Ideal for solo streamers</span>
+                  </span>
+                </div>
+                <div class="musho-main-frame-price">
+                  <span class="musho-main-frame-text046"><span>$8</span></span>
+                  <div class="musho-main-frame-details-container">
+                    <span class="musho-main-frame-text048">
+                      <span>per month</span>
+                    </span>
+                    <div class="musho-main-frame-yearly-switch">
+                      <span class="musho-main-frame-text050">
+                        <span>yearly</span>
+                      </span>
+                      <div class="musho-main-frame-switch">
+                        <div class="musho-main-frame-circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="musho-main-frame-feature-list">
+                  <div class="musho-main-frame-feature">
+                    <img
+                      src="assets/external/checkcircleicon186-oqy.svg"
+                      alt="CheckCircleicon186"
+                      class="musho-main-frame-check-circleicon"
+                    />
+                    <span class="musho-main-frame-text052">
+                      <span>Streaming Access</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature01">
+                    <img
+                      src="assets/external/checkcircleicon190-2q4h.svg"
+                      alt="CheckCircleicon190"
+                      class="musho-main-frame-check-circleicon01"
+                    />
+                    <span class="musho-main-frame-text054">
+                      <span>Unlimited Streaming</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature02">
+                    <img
+                      src="assets/external/checkcircleicon194-7z.svg"
+                      alt="CheckCircleicon194"
+                      class="musho-main-frame-check-circleicon02"
+                    />
+                    <span class="musho-main-frame-text056">
+                      <span>Email Support</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature03">
+                    <img
+                      src="assets/external/checkcircleicon198-kryl.svg"
+                      alt="CheckCircleicon198"
+                      class="musho-main-frame-check-circleicon03"
+                    />
+                    <span class="musho-main-frame-text058">
+                      <span>Community Forum Access</span>
+                    </span>
+                  </div>
+                </div>
+                <button class="musho-main-frame-button2">
+                  <div class="musho-main-frame-text-container06">
+                    <span class="musho-main-frame-text060">
+                      <span>Choose Plan</span>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="musho-main-frame-plan1">
+                <div class="musho-main-frame-heading1">
+                  <img
+                    src="assets/external/iconicon1106-7wrd.svg"
+                    alt="Iconicon1106"
+                    class="musho-main-frame-iconicon1"
+                  />
+                  <span class="musho-main-frame-text062">
+                    <span>Premium</span>
+                  </span>
+                  <span class="musho-main-frame-text064">
+                    <span>Best for streaming enthusiasts</span>
+                  </span>
+                </div>
+                <div class="musho-main-frame-price1">
+                  <div class="musho-main-frame-price2">
+                    <span class="musho-main-frame-text066">
+                      <span>$12</span>
+                    </span>
+                    <span class="musho-main-frame-text068">
+                      <span>99</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-details-container1">
+                    <span class="musho-main-frame-text070">
+                      <span>per month</span>
+                    </span>
+                    <div class="musho-main-frame-yearly-switch1">
+                      <span class="musho-main-frame-text072">
+                        <span>yearly</span>
+                      </span>
+                      <div class="musho-main-frame-switch1">
+                        <div class="musho-main-frame-circle1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="musho-main-frame-feature-list1">
+                  <div class="musho-main-frame-feature04">
+                    <img
+                      src="assets/external/checkcircleicon1122-ntk2.svg"
+                      alt="CheckCircleicon1122"
+                      class="musho-main-frame-check-circleicon04"
+                    />
+                    <span class="musho-main-frame-text074">
+                      <span>Unlimited Screens</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature05">
+                    <img
+                      src="assets/external/checkcircleicon1126-54r.svg"
+                      alt="CheckCircleicon1126"
+                      class="musho-main-frame-check-circleicon05"
+                    />
+                    <span class="musho-main-frame-text076">
+                      <span>HD &amp; 4K Streaming</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature06">
+                    <img
+                      src="assets/external/checkcircleicon1130-l89d.svg"
+                      alt="CheckCircleicon1130"
+                      class="musho-main-frame-check-circleicon06"
+                    />
+                    <span class="musho-main-frame-text078">
+                      <span>24/7 Priority Support</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature07">
+                    <img
+                      src="assets/external/checkcircleicon1134-4vcu.svg"
+                      alt="CheckCircleicon1134"
+                      class="musho-main-frame-check-circleicon07"
+                    />
+                    <span class="musho-main-frame-text080">
+                      <span>Premium Content Access</span>
+                    </span>
+                  </div>
+                </div>
+                <button class="musho-main-frame-button3">
+                  <div class="musho-main-frame-text-container07">
+                    <span class="musho-main-frame-text082">
+                      <span>Choose Plan</span>
+                    </span>
+                  </div>
+                </button>
+              </div>
+              <div class="musho-main-frame-plan2">
+                <div class="musho-main-frame-heading2">
+                  <img
+                    src="assets/external/icon1142-32v9.svg"
+                    alt="Icon1142"
+                    class="musho-main-frame-icon1"
+                  />
+                  <span class="musho-main-frame-text084">
+                    <span>Family</span>
+                  </span>
+                  <span class="musho-main-frame-text086">
+                    <span>Perfect for the whole family</span>
+                  </span>
+                </div>
+                <div class="musho-main-frame-price3">
+                  <span class="musho-main-frame-text088"><span>$16</span></span>
+                  <div class="musho-main-frame-details-container2">
+                    <span class="musho-main-frame-text090">
+                      <span>per month</span>
+                    </span>
+                    <div class="musho-main-frame-yearly-switch2">
+                      <span class="musho-main-frame-text092">
+                        <span>yearly</span>
+                      </span>
+                      <div class="musho-main-frame-switch2">
+                        <div class="musho-main-frame-circle2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="musho-main-frame-feature-list2">
+                  <div class="musho-main-frame-feature08">
+                    <img
+                      src="assets/external/checkcircleicon1156-ik9i.svg"
+                      alt="CheckCircleicon1156"
+                      class="musho-main-frame-check-circleicon08"
+                    />
+                    <span class="musho-main-frame-text094">
+                      <span>Multiple Profiles</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature09">
+                    <img
+                      src="assets/external/checkcircleicon1160-cz8a.svg"
+                      alt="CheckCircleicon1160"
+                      class="musho-main-frame-check-circleicon09"
+                    />
+                    <span class="musho-main-frame-text096">
+                      <span>Parental Controls</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature10">
+                    <img
+                      src="assets/external/checkcircleicon1164-r3lm.svg"
+                      alt="CheckCircleicon1164"
+                      class="musho-main-frame-check-circleicon10"
+                    />
+                    <span class="musho-main-frame-text098">
+                      <span>Priority Support</span>
+                    </span>
+                  </div>
+                  <div class="musho-main-frame-feature11">
+                    <img
+                      src="assets/external/checkcircleicon1168-d0b.svg"
+                      alt="CheckCircleicon1168"
+                      class="musho-main-frame-check-circleicon11"
+                    />
+                    <span class="musho-main-frame-text100">
+                      <span>Family Sharing</span>
+                    </span>
+                  </div>
+                </div>
+                <button class="musho-main-frame-button4">
+                  <div class="musho-main-frame-text-container08">
+                    <span class="musho-main-frame-text102">
+                      <span>Choose Plan</span>
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="musho-main-frame-type-with-newsletter">
+            <div class="musho-main-frame-content1">
+              <div class="musho-main-frame-list">
+                <span class="musho-main-frame-text104">
+                  <span>About StreamFlix</span>
+                </span>
+                <span class="musho-main-frame-text106">
+                  <span>Our Story</span>
+                </span>
+                <span class="musho-main-frame-text108">
+                  <span>Join Our Team</span>
+                </span>
+                <span class="musho-main-frame-text110">
+                  <span>Latest News</span>
+                </span>
+              </div>
+              <div class="musho-main-frame-list1">
+                <span class="musho-main-frame-text112">
+                  <span>Platform Features</span>
+                </span>
+                <span class="musho-main-frame-text114">
+                  <span>Smooth Streaming</span>
+                </span>
+                <span class="musho-main-frame-text116">
+                  <span>Diverse Library</span>
+                </span>
+                <span class="musho-main-frame-text118">
+                  <span>Content Updates</span>
+                </span>
+              </div>
+              <div class="musho-main-frame-list2">
+                <span class="musho-main-frame-text120">
+                  <span>Follow Us</span>
+                </span>
+                <span class="musho-main-frame-text122">
+                  <span>Twitter</span>
+                </span>
+                <span class="musho-main-frame-text124">
+                  <span>Instagram</span>
+                </span>
+                <span class="musho-main-frame-text126">
+                  <span>YouTube</span>
+                </span>
+              </div>
+              <div class="musho-main-frame-list3">
+                <div class="musho-main-frame-labelanddescription">
+                  <span class="musho-main-frame-text128">
+                    <span>StreamFlix Updates</span>
+                  </span>
+                  <span class="musho-main-frame-text130">
+                    <span>Stay updated with the latest on StreamFlix</span>
+                  </span>
+                </div>
+                <div class="musho-main-frame-inputwithbutton">
+                  <div class="musho-main-frame-input1">
+                    <div class="musho-main-frame-input-form1">
+                      <div class="musho-main-frame-text-container09">
+                        <span class="musho-main-frame-text132">
+                          <span>yourname@email.com</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="musho-main-frame-button5">
+                    <img
+                      src="assets/external/icon1201-ff2.svg"
+                      alt="Icon1201"
+                      class="musho-main-frame-icon2"
+                    />
+                  </button>
+                </div>
+                <div class="musho-main-frame-links">
+                  <span class="musho-main-frame-text134">
+                    <span>Terms of Service</span>
+                  </span>
+                  <span class="musho-main-frame-text136">
+                    <span>Privacy Policy</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/browse.js"></script>
+    <script>
+      function refreshData() {
+        window.location.href = "http://localhost:3000/refresh";
+      }
+    </script>
+  </body>
+</html>

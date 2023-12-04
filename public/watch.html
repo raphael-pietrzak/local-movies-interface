@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <title>Streamflix</title>
+    <link rel="stylesheet" href="/watch.css">
+    <link rel="stylesheet" href="/src/episodes.css">
+</head>
+<body>
+
+    <div class="video-player"></div>
+
+    <div class="play-pause-container-overlay">
+        <div class="play-pause-container">
+            <svg class="play-icon-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="pause-icon-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top-container">
+            <div class="top-left-container"><img class="home-icon" src="/assets/home-icon.svg" alt=""></div>
+            <div class="top-right-container">
+                <img class="flag-icon" src="/assets/flag-icon.svg" alt="">
+                <div class="select-episode-box">
+                    <div class="seasons-menu">
+                        <div class="serie-name">
+                            <h3></h3>
+                        </div>
+                        <div class="saison-list"></div>
+                    </div>
+                    <div class="episodes-menu">
+                        <div class="episodes-title selected">
+                            <div class="back-icon"><img src="/assets/back-icon.svg" alt=""></div>
+                            <h3></h3>
+                        </div>
+                        <div class="episodes-list" tabindex="-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="bottom-container">
+            <div class="timeline-bar">
+                <div class="timeline">
+                    <div class="progress-bar-grey">
+                        <div class="progress-bar-red"></div>
+                        <div class="progress-bar-cursor"></div>
+                    </div>
+                </div>
+                <span class="time-remaining">44:45</span>
+            </div>
+            <div class="controls-y-space"></div>
+            <div class="horizontal-bar">
+                <div class="play-pause button"><img class="play-icon" src="/assets/play-icon.svg" alt=""><img class="pause-icon" src="/assets/pause-icon.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="back button"><img src="/assets/skip-backward.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="forward button"><img src="/assets/skip-forward.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="volume button"><img class="volume-icon" src="/assets/volume-max-icon.svg" alt=""><img class="mute-icon" src="/assets/mute-button.svg" alt=""></div>
+                <div class="space"></div>
+            
+                <div class="central">
+                    <h4 class="episode-label"></h4>
+                    <span class="episode-num"></span>
+                    <span class="episode-name"></span>
+                </div>
+            
+                <div class="space"></div>
+                <div class="next-episode button"><img src="/assets/next-icon.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="episodes-button button"><img class="episodes-icon" src="/assets/episodes-icon.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="space"></div>
+                <div class="button"><img src="/assets/subtitles-icon.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="button"><img src="/assets/speed-icon.svg" alt=""></div>
+                <div class="space"></div>
+                <div class="fullscreen button"><img class ="fullscreen-icon" src="/assets/fullscreen-icon.svg" alt=""><img class="minimize-icon" src="/assets/exit-fullscreen.svg" alt=""></div>
+            </div>
+            <div class="controls-y-space"></div>
+        </div>
+    </div>
+
+    <script src="/src/episodes.js"></script>
+    <script src="/watch.js"></script>
+
+</body>
+</html>
