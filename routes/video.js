@@ -6,7 +6,7 @@ const readJsonFile = require('../utils/read_json');
 
 router.get('/:videoId(\\d+)', (req, res) => {
   const videoId = req.params.videoId;
-  const rawdata = fs.readFileSync('movies_ids.json');
+  const rawdata = fs.readFileSync('data/movies_ids.json');
   const jsonData = JSON.parse(rawdata);
 
   const videoPath = jsonData[videoId];
@@ -50,7 +50,7 @@ router.get('/:videoId(\\d+)', (req, res) => {
 });
 
 router.get('/progress', async (req, res) => {
-  const filePath = 'current_episode.json';
+  const filePath = 'data/current_episode.json';
   const parsedData = await readJsonFile(filePath);
   res.json(parsedData);
 })

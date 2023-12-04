@@ -286,7 +286,6 @@ function handleSaveProgress() {
     
     function sendProgress(video, serie_id, episode_id) {
         const isFullscreen = document.fullscreenElement!==null;
-        console.log(isFullscreen);
         const progress = {id: serie_id, episode_id : episode_id, progression: video.currentTime, fullscreen: isFullscreen};
 
         fetch('/videoProgress', {

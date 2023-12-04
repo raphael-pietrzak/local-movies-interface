@@ -5,8 +5,6 @@ const { update_progress } = require('../utils/save_to_json_file');
 
 router.get('/:SerieId', async (req, res) => {
 
-    console.log("BROWSE CLICKED");
-
     const serieId = req.params.SerieId;
     const series = await readJsonFile('data/movie_info.json');
     let serie = null;
@@ -31,7 +29,6 @@ router.get('/:SerieId', async (req, res) => {
 
     const progress = await readJsonFile('data/current_episode.json');
 
-    console.log(serieId, progress) 
     if (progress[serieId]) {
         episodeId = progress[serieId].episode_id;
     }
@@ -43,7 +40,6 @@ router.get('/:SerieId', async (req, res) => {
 
 router.get('/change/:SerieId/:EpisodeId', (req, res) => {
 
-    console.log("CHANGE CLICKED");
 
     const serieId = req.params.SerieId;
     const episodeId = req.params.EpisodeId;
@@ -55,7 +51,6 @@ router.get('/change/:SerieId/:EpisodeId', (req, res) => {
 router.get('/:SerieId/:EpisodeId', async (req, res) => {
 
 
-    console.log("WATCH CLICKED");
 
     const serieId = req.params.SerieId;
     let episodeId = req.params.EpisodeId;

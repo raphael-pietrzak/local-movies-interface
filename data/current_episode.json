@@ -2,7 +2,13 @@
   "1399": {
     "id": "1399",
     "episode_id": "63061",
-    "progression": 373.292291,
+    "progression": 379.824321,
+    "fullscreen": false
+  },
+  "1668": {
+    "id": "1668",
+    "episode_id": "85987",
+    "progression": 0,
     "fullscreen": false
   },
   "13916": {
@@ -21,6 +27,12 @@
     "id": "62110",
     "episode_id": "1044447",
     "progression": 4.911739,
+    "fullscreen": false
+  },
+  "85937": {
+    "id": "85937",
+    "episode_id": "1675448",
+    "progression": 0,
     "fullscreen": false
   },
   "204832": {

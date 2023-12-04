@@ -115,12 +115,10 @@ async function loadEpisodeSelection() {
     function loadEpisodes(season_number) {
     
         let episodes_list = document.querySelector(".episodes-list");
-        console.log(episodes_list.innerHTML);
         episodes_list.innerHTML = "";
         let season = serie.seasons[season_number];
 
         for (let episode of season.episodes) {
-            console.log(episode.episode_number, episode.name)
             let episodes_html = `
             <div class="episode" id="${episode.id}">
                 <span class="episode-number">${episode.episode_number}</span>
@@ -129,7 +127,6 @@ async function loadEpisodeSelection() {
             </div>`;
             episodes_list.innerHTML += episodes_html;
 
-            // console.log(episodes_html)
 
             // if (episode.id == progress.episode_id) {
             //     let progress_bar = document.querySelector(".progress progress");
@@ -139,7 +136,6 @@ async function loadEpisodeSelection() {
 
         const episodes_collection = document.getElementsByClassName("episode");
         const episodes = Array.from(episodes_collection);
-        // console.log(episodes_list.innerHTML);
 
         for (let i = 0; i < episodes.length; i++) {
             let episode = episodes[i];
@@ -149,7 +145,6 @@ async function loadEpisodeSelection() {
             })              
         }
 
-        console.log(episodes_list.innerHTML);
 
     
         const episodes_title = document.querySelector(".episodes-title");
@@ -162,7 +157,6 @@ async function loadEpisodeSelection() {
     
         });
 
-        console.log(episodes_list.innerHTML);
 
     
     }

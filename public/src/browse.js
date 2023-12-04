@@ -35,7 +35,7 @@ async function creerDivsPourImages() {
 
 
         movieSquare.addEventListener('click', () => {
-            window.location.href = `http://localhost:3000/next/${key}`;
+            window.location.href = `http://localhost:3000/next/${value['id']}`;
         })
 
         movieSquaresContainer.appendChild(movieSquare);
