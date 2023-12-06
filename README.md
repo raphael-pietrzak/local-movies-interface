@@ -22,7 +22,7 @@ npm install
 ```
 
 ## Configuration
-Remplir ici l'apikey de TMDB et le path du dossier contenant vos séries
+Remplir ici l'apikey de TMDB (https://www.themoviedb.org/settings/api) et le path du dossier contenant vos séries (Ex : "/Users/JohnDoe/Movies/Séries")
 ```bash
 node utils/inquierApiKey.js
 ```
