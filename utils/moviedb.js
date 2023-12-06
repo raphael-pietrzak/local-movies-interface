@@ -1,7 +1,8 @@
 const axios = require('axios');
 const readline = require('readline-sync');
+const config = require('../config');
 
-const apiKey = 'API-KEY';
+const apiKey = config.apiKey;
 const apiMovieUrl = 'https://api.themoviedb.org/3/search/movie';
 const apiTvUrl = 'https://api.themoviedb.org/3/search/tv';
 

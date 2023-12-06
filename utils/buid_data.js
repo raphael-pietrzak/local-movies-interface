@@ -2,6 +2,7 @@ const {get_movie_data, get_tv_data, get_season_data, get_episode_data, getSerieD
 const get_folder_names = require('./get_folder_names')
 const {saveToJsonFile} = require('./save_to_json_file')
 const get_full_paths = require('./detect_episodes_and_seasons')
+const config = require('../config')
 
 async function build_data(name) {
 
@@ -75,7 +76,7 @@ async function build_episode(data) {
 
 // test
 async function test() {
-    const folder_series_path = '/Users/monkeyparadise/Movies/Séries/'
+    const folder_series_path = config.seriesPath
     const folders = get_folder_names(folder_series_path)
     // console.log(folders)
     const data = {}

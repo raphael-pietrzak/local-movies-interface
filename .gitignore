@@ -1,4 +1,4 @@
 # public/assets/**
 **/.DS_Store
 .vscode/**
-
+config.js

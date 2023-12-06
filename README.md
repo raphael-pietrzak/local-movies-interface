@@ -21,6 +21,12 @@ Watch page
 npm install
 ```
 
+## Configuration
+Remplir ici l'apikey de TMDB et le path du dossier contenant vos séries
+```bash
+node utils/inquierApiKey.js
+```
+
 ## Usage
 
 ```bash
