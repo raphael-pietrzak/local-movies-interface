@@ -170,8 +170,8 @@ function handleFullScreen(){
             fullscreen_icon.style.display = 'block';
             minimize_icon.style.display = 'none';
         } else {
-            // const element = document.documentElement;
-            video.requestFullscreen();
+            const element = document.documentElement;
+            element.requestFullscreen();
             fullscreen_icon.style.display = 'none';
             minimize_icon.style.display = 'block';
         }
@@ -352,6 +352,7 @@ async function loadVideo() {
     }
 
     let video = document.querySelector('video');
+    console.log(video.textTracks.length);
     video.currentTime = time_code;
 
 
