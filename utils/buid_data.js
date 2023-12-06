@@ -7,14 +7,14 @@ async function build_data(name) {
 
     const serie = await get_tv_data(name);
     if (!serie){
-        return {}
+        return null
     }
     serie_id = serie.id
 
     const serie_details = await getSerieDetails(serie_id)
 
     if (!serie_details){
-        return {}
+        return null
     }
     
     const number_of_seasons = serie_details.number_of_seasons
@@ -83,9 +83,10 @@ async function test() {
     for (let i = 0; i < folders.length; i++) {
         const folder = folders[i];
         const current_show= await build_data(folder);
-        
-        
-        
+
+        if (!current_show){
+            continue
+        }
         
         desktop_tree = get_full_paths(folder_series_path )
         // console.log(desktop_tree)
